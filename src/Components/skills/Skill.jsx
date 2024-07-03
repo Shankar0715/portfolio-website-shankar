@@ -10,7 +10,7 @@ const Skill = () => {
       <div className='exp-list'>
         <div className="exp-item">
           <div className='exp-info'>
-            <p>HTML</p>
+            <p>React</p>
             <p>90%</p>
           </div>
           <div className='progress' data-percent="90">
