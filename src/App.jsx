@@ -4,9 +4,9 @@ import Hero from "./Components/Hero/Hero";
 import Nav from "./Components/Navbar/Nav";
 import Parallex from "./Components/parallex/Parallex";
 import Project from "./Components/Projects/Project";
-import Skill from "./Components/skills/skill";
+import Skill from "./Components/skills/Skill";
 import "./app.scss";
-import Footer from "./Components/Hero/Footer/footer";
+import Footer from "./Components/Footer/footer";
 
 const App = () => {
   return (

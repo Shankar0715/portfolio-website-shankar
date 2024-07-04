@@ -4,7 +4,7 @@ import "./hero.scss";
 import profile from "./profile.jpg";
 import { ArrowDownTrayIcon } from '@heroicons/react/24/solid';
 import { motion } from "framer-motion";
-import Footer from "./Footer/footer"; // Adjusted import path if necessary
+import Footer from "../Footer/footer"; // Adjusted import path if necessary
 
 const textvariants = {
   initial: {
