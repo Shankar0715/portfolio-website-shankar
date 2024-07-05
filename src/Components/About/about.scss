@@ -5,6 +5,8 @@
     height: 100%;
     overflow: hidden;
 
+   
+
     &::before {
         content: "";
         position: absolute;
@@ -13,7 +15,8 @@
         width: 100%;
         height: 100%;
         background-color: rgba(25, 23, 46, 0.9);
-        z-index: -1; /* Ensure the overlay is below the content */
+        z-index: -1;
+        /* Ensure the overlay is below the content */
     }
 
     .about {
@@ -26,70 +29,92 @@
         padding: 10%;
 
         @include mobile {
-            flex-direction: column; /* Change flex direction to column */
+            flex-direction: column;
+            /* Change flex direction to column */
             justify-content: center;
-            padding: 20px; /* Adjust padding for mobile */
-            height: auto; /* Adjust height for mobile */
+            align-items: center;
+            padding: 10px;
+            /* Adjust padding for mobile */
+            height: auto;
+            /* Adjust height for mobile */
+            min-height: 100vh;
+            /* Ensure section occupies full viewport height */
         }
 
         .text {
             width: 50%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-            position: relative;
-            z-index: 1;
+            /* Full width on mobile */
+            // text-align: center;
+            /* Center text on mobile */
+            align-items: center;
+            /* Center align items */
+            margin-bottom: 20px;
+            /* Margin at bottom to separate from the image */
+            padding: 0 20px;
+            /* Add padding for better spacing */
 
             @include mobile {
-                width: 100%; /* Full width on mobile */
-                text-align: center; /* Center text on mobile */
-                align-items: center; /* Center align items */
-                margin-bottom: 20px; /* Margin at bottom to separate from the image */
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 0px;
+
             }
 
             h1 {
-                font-size: 30px;
+                font-size: 50px;
                 color: rebeccapurple;
-                letter-spacing: 10px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                @include mobile {
+                   font-size: 40px;
+    
+                }
             }
 
             h2 {
-                font-size: 50px;
-                line-height: 2rem;
-                margin-bottom: 3rem;
+                font-size: 55px;
+                /* Adjust font size for mobile */
+                line-height: 1.5;
+                margin-bottom: 1.5rem;
+                /* Adjust margin for mobile */
                 font-weight: bold;
                 color: white;
 
                 @include mobile {
-                    font-size: 25px; /* Adjust font size for mobile */
-                    line-height: 1.5rem; /* Adjust line height for mobile */
-                    margin-bottom: 1.5rem; /* Adjust margin for mobile */
-                }
+                    font-size: 30px;
+     
+                 }
             }
 
             .para {
-                font-size: 19px;
+                font-size: 20px;
+                /* Adjust font size for mobile */
                 color: rgb(249, 247, 247);
-                width: 100%;
+                margin-bottom: 20px;
+                /* Add margin at bottom */
+                line-height: 1.6;
 
                 @include mobile {
-                    font-size: 16px; /* Adjust font size for mobile */
+                    margin-bottom: 0px;
+                    font-size: 14px;
+
                 }
             }
         }
 
         .pic {
-            height: auto;
-            width: 60%;
-            z-index: 1;
-            margin-left: 23em;
+            width: 100%;
+            /* Full width on mobile */
+            height: 700px;
+            margin-top: 20px;
+            /* Add margin at top to separate from text */
 
             @include mobile {
-                width: 50%; /* Adjust width for mobile */
-                margin-left:100px ; /* Remove left margin for mobile */
-                margin-top: 20px; /* Add margin at top to separate from text */
+                align-items: center;
+                width: 100%;
+                height: 200px;
+
             }
         }
     }

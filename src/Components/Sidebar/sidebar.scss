@@ -18,6 +18,7 @@
 
       @include mobile{
         width: 200px;
+        height: 100vh;
     }
 
         .links{
@@ -54,7 +55,7 @@
                 font-size: 40px;
 
                 @include mobile{
-                   font-size: 20px;
+                   font-size: 30px;
                 }
                 
             }

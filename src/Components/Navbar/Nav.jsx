@@ -10,7 +10,7 @@ const Nav = () => {
             <div className="wrapper">
                 <motion.span initial={{ opacity: 0, scale: 0.5 }} 
                 animate={{ opacity: 1, scale: 1 }} 
-                transition={{ duration: 0.5 }}>Lama dev</motion.span>
+                transition={{ duration: 0.5 }}>S.S</motion.span>
                 <div className="social">
                     <a href="https://github.com/Shankar0715"><img src="/github.svg" alt="" /></a>
                     <a href="https://www.instagram.com/mr_yuvanshankar?igsh=cDV1d2FtaXBndmlt"><img src="/instagram.svg" alt="" /></a>

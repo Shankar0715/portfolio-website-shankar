@@ -1,25 +1,28 @@
 @import "../../app.scss";
 
-.parallex{
+
+
+.parallex {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    scroll-snap-align: start;
+    z-index: 1;
 
-    h1{
+    h1 {
         font-size: 100px;
 
-        @include mobile{
-           font-size: 72px;
-           text-align: center;
+        @include mobile {
+            font-size: 72px;
+            text-align: center;
         }
-
     }
 
-    .mountains{
+    .mountains {
         background-image: url("/public/mountains.png");
         background-size: cover;
         background-position: bottom;
@@ -27,13 +30,15 @@
         height: 100%;
         position: absolute;
         z-index: 3;
+        will-change: transform;
 
-        @include mobile{
-           background-size: contain;
-           background-repeat: no-repeat;
-         }
+        @include mobile {
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
-    .planets{
+
+    .planets {
         background-image: url("/public/planets.png");
         background-size: cover;
         background-position: bottom;
@@ -41,13 +46,15 @@
         height: 100%;
         position: absolute;
         z-index: 2;
+        will-change: transform;
 
-        @include mobile{
+        @include mobile {
             background-size: contain;
             background-repeat: no-repeat;
-          }
+        }
     }
-    .stars{
+
+    .stars {
         background-image: url("/public/stars.png");
         background-size: cover;
         background-position: bottom;
@@ -55,7 +62,6 @@
         height: 100%;
         position: absolute;
         z-index: 1;
-
-       
+        will-change: transform;
     }
 }
